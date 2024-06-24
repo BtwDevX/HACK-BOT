@@ -10,7 +10,7 @@ from telethon import events
 async def start(event):
     id = event.sender_id
     mention = f"[{event.sender.first_name}](tg://user?id={id})"
-    TEXT = "Hey {}, I am a Session Hacker Bot Supporting Both Pyrogram and Telethon Session String. Type /hack to see menu"
+    TEXT = "Hey {}, I am a Hacker Bot Supporting Both Pyrogram and Telethon Session String. Type /hack to see menu"
     await event.reply(TEXT.format(mention))
     if DB:
         await DB.add_user(id)
